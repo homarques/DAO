@@ -1,6 +1,6 @@
-library(raveio)
-library(dplyr)
-library(RWeka)
+if (!require('RWeka')) install.packages('RWeka'); library('RWeka')
+if (!require('dplyr')) install.packages('dplyr'); library('dplyr')
+if (!require('raveio')) install.packages('raveio'); library('raveio')
 
 #Delete raw datasets?
 remove = FALSE

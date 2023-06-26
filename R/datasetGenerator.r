@@ -1,5 +1,5 @@
-library(MASS)
-library(pracma)
+if (!require('MASS')) install.packages('MASS'); library('MASS')
+if (!require('pracma')) install.packages('pracma'); library('pracma')
 
 #Path to save the datasets
 path = "/path/to/save/datasets"

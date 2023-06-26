@@ -1,6 +1,7 @@
-library(scmamp)
-library(ggplot2)
-library(RColorBrewer)
+if (!require('ggplot2')) install.packages('ggplot2'); library('ggplot2')
+if (!require('scmamp')) install.packages('scmamp'); library('scmamp')
+if (!require('RColorBrewer')) install.packages('RColorBrewer'); library('RColorBrewer')
+
 source('R/latex.r')
 
 
