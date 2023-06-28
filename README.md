@@ -94,5 +94,5 @@ Fig. 3. Critical difference diagram (significance level α = 1e-16) of average r
 python runtime.py
 Rscript R/compileResults.r 'printRuntime'
 ```
-<p align="center"><img src="/files/runtime.png" width="30%" height="30%"></p>
+<p align="center"><img src="/files/runtime.png" width="27%" height="27%"></p>
 
