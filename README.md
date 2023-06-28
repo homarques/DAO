@@ -5,7 +5,13 @@ Repository of the paper:
 Dimensionality-Aware Outlier Detection
 Submitted to ICDM 2023
 ```
-In this paper, we present a theoretical model for outlier detection. In contrast to the traditional outlier detection methods, we propose a model for Dimensionality-Aware Outlier Detection (DAO). Through this model, we have evidenced and explained the susceptibility of conventional, dimension-unaware outlier detection methods to the variability of dimensionality and complexity of local intrinsic dimension profiles within a dataset, providing a principled approach towards handling this problem in a better justified and more effective way.
+
+In this paper, we present a nonparametric method for outlier detection that takes full account of local variations in intrinsic dimensionality within the dataset. Using the theory of Local Intrinsic Dimensionality (LID), our 'dimensionality-aware' outlier detection method, DAO, is derived as an estimator of an asymptotic local expected density ratio involving the query point and a close neighbor drawn at random. The dimensionality-aware behavior of DAO is due to its use of local estimation of LID values in a theoretically-justified way.
+
+Through comprehensive experimentation on more than 800 synthetic and real datasets, we show that DAO significantly outperforms three popular and important benchmark outlier detection methods: Local Outlier Factor (LOF), Simplified LOF, and kNN.
+
+
+Detailed numbers for all experiments are given in tables in the [Supplementary Material](https://homarques.github.io/DAO/files/DAO_Supplementary.pdf)
 
 ## Setup
 
