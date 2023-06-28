@@ -34,7 +34,7 @@ Rscript R/preprocessing.r
 ```sh
 Rscript R/compileResults.r 'summaryRealDatasets'
 ```
-<p align="center"><img src="/files/tab1.png" width="40%" height="40%"></p>
+<p align="center"><img src="/files/tab1.png" width="50%" height="50%"></p>
 
 
 ## Experimental Results
@@ -51,7 +51,7 @@ Fig. 1. ROC AUC values for outlier detection performance over 480 synthetic data
 ```sh
 Rscript R/compileResults.r 'lrSyntheticDatasets'
 ```
-<p align="center"><img src="/files/tab2.png" width="40%" height="40%"></p>
+<p align="center"><img src="/files/tab2.png" width="50%" height="50%"></p>
 
 
 ### Comparative Evaluation on Real Datasets
@@ -66,18 +66,18 @@ python stats.py
 ```sh
 Rscript R/compileResults.r 'lrRealDatasets'
 ```
-<p align="center"><img src="/files/tab3.png" width="40%" height="40%"></p>
+<p align="center"><img src="/files/tab3.png" width="50%" height="50%"></p>
 
 #### Visualizing Outlier Detection Performance
 ```sh
 Rscript R/compileResults.r 'plot_R_MoransI'
 ```
 <p align="center">
-  <img src="/files/slof.png" width="40%" height="40%">
-  <img src="/files/lof.png" width="40%" height="40%">
+  <img src="/files/slof.png" width="50%" height="50%">
+  <img src="/files/lof.png" width="50%" height="50%">
 </p>
-<p align="center"><img src="/files/knn.png" width="40%" height="40%">
-  <img src="/files/oracle.png" width="40%" height="40%">
+<p align="center"><img src="/files/knn.png" width="50%" height="50%">
+  <img src="/files/oracle.png" width="50%" height="50%">
 </p>
 Fig. 2. Differences in ROC AUC performance between DAO<sub>MLE</sub> and the dimensionality-unaware methods over 393 real datasets. Blue dots indicate datasets where DAO outperforms its competitor, whereas red dots indicate the opposite. The 'Oracle' method indicates the best-performing competitor for each individual dataset. Color intensity is proportional to the ROC AUC difference. On the x- and y-axis we show the Moran's I autocorrelation and dispersion R of log-LID estimates, respectively.
 
@@ -86,7 +86,7 @@ Fig. 2. Differences in ROC AUC performance between DAO<sub>MLE</sub> and the dim
 ```sh
 Rscript R/compileResults.r 'plotCDRealDatasets'
 ```
-<p align="center"><img src="/files/plotCD.png" width="40%" height="40%"></p>
+<p align="center"><img src="/files/plotCD.png" width="50%" height="50%"></p>
 Fig. 3. Critical difference diagram (significance level α = 1e-16) of average ranks of the methods on 393 real datasets: DAO<sub>MLE</sub> vs. baseline competitors.
 
 ### Runtime Performance and Computational Complexity
@@ -94,5 +94,5 @@ Fig. 3. Critical difference diagram (significance level α = 1e-16) of average r
 python runtime.py
 Rscript R/compileResults.r 'printRuntime'
 ```
-<p align="center"><img src="/files/runtime.png" width="20%" height="20%"></p>
+<p align="center"><img src="/files/runtime.png" width="30%" height="30%"></p>
 
