@@ -13,7 +13,9 @@ Through comprehensive experimentation on more than 800 synthetic and real datase
 
 Detailed numbers for all experiments are given in tables in the [Supplementary Material](https://homarques.github.io/DAO/files/DAO_Supplementary.pdf)
 
-## Setup
+------
+
+### Repository setup
 
 ```sh
 git clone https://github.com/homarques/DAO.git
@@ -32,30 +34,25 @@ Rscript R/preprocessing.r
 ```sh
 Rscript R/compileResults.r 'summaryRealDatasets'
 ```
-<p align="center"><img width="500" alt="summaryRealDatasets" src="https://github.com/homarques/DAO/assets/1656782/27c32a23-33a5-4d71-ab0b-8187048e511f"></p>
+<p align="center"><img src="/files/tab1.png" width="40%" height="40%"></p>
+
 
 ## Experimental Results
 
-### Evaluation of DAO Using Different LID Estimators
+### Evaluation of LID Estimation on DAO Performance
 ```sh
 python run_synthetic.py
 Rscript R/compileResults.r 'summaryResultsSyntheticDatasets'
 ```
-![synthetic](https://github.com/homarques/DAO/assets/1656782/6556e00e-ce89-4085-9908-35507438763f)
-Fig. 1. ROC AUC values for outlier detection performance over 480 synthetic datasets containing 2 clusters. One of the clusters ($c_1$) has intrinsic dimension fixed at 8. The intrinsic dimension of the other cluster ($c_2$) varies across the datasets ($x$-axis). The dashed vertical line indicates the reference set where both clusters lie on manifolds with the same intrinsic dimension (8). The results shown are averages over 30 datasets with the same characteristics. Bars indicate standard deviation.
+<p align="center"><img src="/files/synthetic.png" width="90%" height="90%"></p>
+Fig. 1. ROC AUC values for outlier detection performance over 480 synthetic datasets containing 2 clusters. One of the clusters (c<sub>1</sub>) has intrinsic dimension fixed at 8. The intrinsic dimension of the other cluster (c<sub>2</sub>) varies across the datasets (x-axis). The dashed vertical line indicates the reference set where both clusters lie on manifolds with the same intrinsic dimension (8). The results shown are averages over 30 datasets with the same characteristics. Bars indicate standard deviation.
 
 ### Comparative Evaluation on Synthetic Datasets
 ```sh
 Rscript R/compileResults.r 'lrSyntheticDatasets'
 ```
-<p align="center"><img width="500" alt="Screenshot 2023-06-26 at 13 29 20" src="https://github.com/homarques/DAO/assets/1656782/1383c1a7-2955-48b7-9fad-d058fe135c2f"></p>
+<p align="center"><img src="/files/tab2.png" width="40%" height="40%"></p>
 
-### Runtime Performance and Computational Complexity
-```sh
-python runtime.py
-Rscript R/compileResults.r 'printRuntime'
-```
-<p align="center"><img width="275" alt="runtime" src="https://github.com/homarques/DAO/assets/1656782/34b79181-f464-4ff9-827c-089ae7d07614"></p>
 
 ### Comparative Evaluation on Real Datasets
 
@@ -65,11 +62,37 @@ python stats.py
 ```
 
 #### Simple linear regression
-```sh
-Rscript R/compileResults.r 'lrRealDatasets'
 
-#### Simple linear regression
 ```sh
 Rscript R/compileResults.r 'lrRealDatasets'
 ```
-<p align="center"><img width="500" alt="Screenshot 2023-06-26 at 13 53 53" src="https://github.com/homarques/DAO/assets/1656782/0c48065c-7bcb-42a5-8cca-d7d0bf6ac19d"></p>
+<p align="center"><img src="/files/tab3.png" width="40%" height="40%"></p>
+
+#### Visualizing Outlier Detection Performance
+```sh
+Rscript R/compileResults.r 'plot_R_MoransI'
+```
+<p align="center">
+  <img src="/files/slof.png" width="40%" height="40%">
+  <img src="/files/lof.png" width="40%" height="40%">
+</p>
+<p align="center"><img src="/files/knn.png" width="40%" height="40%">
+  <img src="/files/oracle.png" width="40%" height="40%">
+</p>
+Fig. 2. Differences in ROC AUC performance between DAO<sub>MLE</sub> and the dimensionality-unaware methods over 393 real datasets. Blue dots indicate datasets where DAO outperforms its competitor, whereas red dots indicate the opposite. The 'Oracle' method indicates the best-performing competitor for each individual dataset. Color intensity is proportional to the ROC AUC difference. On the x- and y-axis we show the Moran's I autocorrelation and dispersion R of log-LID estimates, respectively.
+
+#### Critical Distance Diagram
+
+```sh
+Rscript R/compileResults.r 'plotCDRealDatasets'
+```
+<p align="center"><img src="/files/plotCD.png" width="40%" height="40%"></p>
+Fig. 3. Critical difference diagram (significance level α = 1e-16) of average ranks of the methods on 393 real datasets: DAO<sub>MLE</sub> vs. baseline competitors.
+
+### Runtime Performance and Computational Complexity
+```sh
+python runtime.py
+Rscript R/compileResults.r 'printRuntime'
+```
+<p align="center"><img src="/files/runtime.png" width="20%" height="20%"></p>
+
