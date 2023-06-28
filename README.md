@@ -15,7 +15,7 @@ Detailed numbers for all experiments are given in tables in the [Supplementary M
 
 ------
 
-### Repository setup
+## Repository setup
 
 ```sh
 git clone https://github.com/homarques/DAO.git
