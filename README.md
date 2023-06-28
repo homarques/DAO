@@ -11,7 +11,7 @@ In this paper, we present a nonparametric method for outlier detection that take
 Through comprehensive experimentation on more than 800 synthetic and real datasets, we show that DAO significantly outperforms three popular and important benchmark outlier detection methods: Local Outlier Factor (LOF), Simplified LOF, and kNN.
 
 
-Detailed numbers for all experiments are given in tables in the [Supplementary Material](https://homarques.github.io/DAO/files/DAO_Supplementary.pdf)
+Detailed numbers for all experiments are given in tables in the [Supplementary Material](https://anonymous.4open.science/w/DAO-984F/files/DAO_Supplementary.pdf)
 
 ------
 
