@@ -88,8 +88,7 @@ def main(batch):
 				if(auc > aucs[i, 7]):
 					aucs[i, 7] = auc
 		i += 1
-		print(i)
-
+		
 	np.savetxt('experiments/synthetic/batch' + str(batch) + '.txt', aucs, delimiter=',', fmt='%f', header = "KNN, LOF, SLOF, DAO_RQNSF, DAO_MoG, DAO_MLE, DAO_TLE, DAO_TwoNN")
 
 	return 
