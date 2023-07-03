@@ -12,7 +12,6 @@ from os import path, mkdir
 
 
 def main(batch):
-	print(batch)
 	i = 0
 	aucs = np.zeros((16, 8))
 	for dataset in range(2, 33, 2):
