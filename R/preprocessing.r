@@ -3,7 +3,7 @@ if (!require('dplyr')) install.packages('dplyr'); library('dplyr')
 if (!require('raveio')) install.packages('raveio'); library('raveio')
 
 #Delete raw datasets?
-remove = FALSE
+remove = TRUE
 
 final_datasets = c()
 pwd = 'datasets/real/raw/'
