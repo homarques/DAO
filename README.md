@@ -16,10 +16,10 @@ Detailed numbers for all experiments are given in tables in the [Supplementary M
 ------
 
 ## Repository setup
+<!--- git clone https://github.com/homarques/DAO.git
+cd DAO --->
 
 ```sh
-git clone https://github.com/homarques/DAO.git
-cd DAO
 pip install -r requirements.txt
 ```
 #### Downloading real datasets
