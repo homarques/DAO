@@ -3,7 +3,7 @@
 Repository of the paper:
 ```latex
 Dimensionality-Aware Outlier Detection
-Submitted to ICDM 2023
+Submitted to SDM24
 ```
 
 In this paper, we present a nonparametric method for outlier detection that takes full account of local variations in intrinsic dimensionality within the dataset. Using the theory of Local Intrinsic Dimensionality (LID), our 'dimensionality-aware' outlier detection method, DAO, is derived as an estimator of an asymptotic local expected density ratio involving the query point and a close neighbor drawn at random. The dimensionality-aware behavior of DAO is due to its use of local estimation of LID values in a theoretically-justified way.
