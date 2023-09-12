@@ -18,8 +18,8 @@ plotSynth <- function () {
 	results_mean = c()
 	results_sd = c()
 	for(i in 1:16){
-		results_mean = rbind(results_mean, colMeans(results_table[seq(i, 16*24, 16),]))
-		results_sd = rbind(results_sd, apply(results_table[seq(i, 16*24, 16),], 2, sd))
+		results_mean = rbind(results_mean, colMeans(results_table[seq(i, 16*30, 16),]))
+		results_sd = rbind(results_sd, apply(results_table[seq(i, 16*30, 16),], 2, sd))
 	}
 
 	df <- data.frame(Algorithms=rep(names, each = 16), Dimensionality=rep(seq(2, 32, 2), 8), SD = c(results_sd), AUCROC = c(results_mean))
