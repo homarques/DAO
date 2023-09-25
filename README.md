@@ -76,8 +76,8 @@ Rscript R/compileResults.r 'plot_R_MoransI'
   <img src="https://homarques.github.io/DAO/files/slof.png" width="45%" height="45%">
   <img src="https://homarques.github.io/DAO/files/lof.png" width="45%" height="45%">
 </p>
-<p align="center"><img src="https://anonymous.4open.science/r/DAO-984F/files/knn.png" width="45%" height="45%">
-  <img src="https://anonymous.4open.science/r/DAO-984F/files/oracle.png" width="45%" height="45%">
+<p align="center"><img src="https://homarques.github.io/DAO/files/knn.png" width="45%" height="45%">
+  <img src="https://homarques.github.io/DAO/files/oracle.png" width="45%" height="45%">
 </p>
 Fig. 2. Differences in ROC AUC performance between DAO<sub>MLE</sub> and the dimensionality-unaware methods over 393 real datasets. Blue dots indicate datasets where DAO outperforms its competitor, whereas red dots indicate the opposite. The 'Oracle' method indicates the best-performing competitor for each individual dataset. Color intensity is proportional to the ROC AUC difference. On the x- and y-axis, we show Moran's I autocorrelation and dispersion R of log-LID estimates, respectively.
 
