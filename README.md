@@ -44,7 +44,7 @@ Rscript R/compileResults.r 'summaryRealDatasets'
 python run_synthetic.py
 Rscript R/compileResults.r 'summaryResultsSyntheticDatasets'
 ```
-<p align="center"><img src="https://anonymous.4open.science/r/DAO-984F/files/synthetic.png" width="90%" height="90%"></p>
+<p align="center"><img src="https://homarques.github.io/DAO/files/synthetic.png" width="90%" height="90%"></p>
 Fig. 1. ROC AUC values for outlier detection performance over 480 synthetic datasets containing 2 clusters. One of the clusters (c<sub>1</sub>) has intrinsic dimension fixed at 8. The intrinsic dimension of the other cluster (c<sub>2</sub>) varies across the datasets (x-axis). The dashed vertical line indicates the reference set where both clusters lie on manifolds with the same intrinsic dimension (8). The results shown are averages over 30 datasets with the same characteristics. Bars indicate standard deviation.
 
 ### Comparative Evaluation on Synthetic Datasets
