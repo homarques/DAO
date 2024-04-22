@@ -4,7 +4,7 @@ Repository of the paper:
 ```latex
 Dimensionality-Aware Outlier Detection
 Alastair Anderberg, James Bailey, Ricardo J. G. B. Campello,
-Michael E. Houle, Henrique O. Marques, Miloš Radovanovic, Arthur Zimek
+Michael E. Houle, Henrique O. Marques, Miloš Radovanović, Arthur Zimek
 SDM24
 ```
 
