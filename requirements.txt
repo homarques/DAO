@@ -1,5 +1,5 @@
 numpy==1.24.3
 pysal==23.1
 scikit_dimension==0.3.3
-scikit_learn==1.2.1
+scikit_learn==1.5.0
 scipy==1.11.0
